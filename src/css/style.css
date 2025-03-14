@@ -1,112 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #252525;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+    background: #8AA29E;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-    display: inline-block;
-    align-items: center;
-    font-weight: bold;
+/* Logo */
+.logo {
+    width: 8%;
+}
+.logo img {
+    width: 100px;
+    border-radius: 50px;
+    padding: 6px;
+    vertical-align: middle;
 }
 
-nav ul li a {
-    color: #EDF2F4;
+/* Navigacija */
+nav {
+    position: absolute;
+    left: 40%;
+}
+nav a {
+    color: black;
+    margin: 0 15px;
     text-decoration: none;
+    font-size: 20px;
 }
-
-section {
-    padding: 20px;
-    color: #EDF2F4;
-}
-
-footer {
-    color: #b4e7fc;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 50px;
-}
-
-footer a {
-    color: #EDF2F4;
-    text-decoration: none;
-}
-
-footer a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-.logo {
-    width: 100px;
-    border-radius: 10%;
-}
-
-
-button {
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    color: #EDF2F4;
-    background-color: #EF233C;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px #dadfe0;
-    margin-bottom: 30px;
-  }
-
-li {
-    list-style-type: none;
-    color: #cacecf;
-    margin: 0;
+/* Hero */
+.hero {
+    background-image: url("");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
     padding: 0;
-}
-
-#hero {
-    height: 85vh;
-    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: white;
-}
-
-.hero-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: #EDF2F4;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
     text-align: center;
-    z-index: 1;
 }
 
-#foto img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+footer {
+    background: #8AA29E;
+    color: black;
+    margin-top: auto;
 }
