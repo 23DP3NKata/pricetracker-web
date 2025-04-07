@@ -1,69 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #F1F0E9;
 }
 
 header {
-    background: #8AA29E;
+    padding: 10px;
+    background-color: #024CAA;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-/* Logo */
-.logo {
-    width: 8%;
-}
-.logo img {
-    width: 100px;
-    border-radius: 50px;
-    padding: 6px;
-    vertical-align: middle;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    display: inline-block;
+    align-items: center;
+    font-weight: bold;
 }
 
-/* Navigacija */
-nav {
-    position: absolute;
-    left: 40%;
-}
-nav a {
-    color: black;
-    margin: 0 15px;
+nav ul li a {
+    color: #EDF2F4;
     text-decoration: none;
-    font-size: 20px;
-}
-nav a:hover {
-    text-decoration: underline;
 }
 
-/* Hero */
-.hero {
-    background-image: url("");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
-    text-align: center;
-}
+/*  */
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
+section {
+    padding: 20px;
+    color: #EDF2F4;
 }
 
 footer {
-    background: #8AA29E;
-    color: black;
-    margin-top: auto;
+    color: #000000;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    height: 85vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.hero-content {
+    background: #024baade;
+    padding: 20px;
+    border-radius: 10px;
+    color: #EDF2F4;
+    text-align: justify;
+    text-justify: inter-word;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    max-width: 30%;
+    font-size: 18px;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #024baade;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    display:block;
+    margin-top: 280px;
+    margin-right: 55%;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #00224ede;
 }
