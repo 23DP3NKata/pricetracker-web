@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 2vh;
     background-color: #024CAA;
 }
 
@@ -17,6 +17,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -32,11 +33,64 @@ nav ul li a {
     text-decoration: none;
 }
 
-/*  */
+#hero {
+    padding: 10vh 5%;
+    background-color: #F1F0E9;
+}
 
-section {
-    padding: 20px;
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 450px;
+}
+
+.hero-content {
+    background-color: #024baade;
+    padding: 40px;
+    border-radius: 10px;
     color: #EDF2F4;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hero-button {
+    background-color: #ffffffde;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.hero-button:hover {
+    background-color: #ddd;
+}
+
+.hero-image {
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
 }
 
 footer {
@@ -57,70 +111,28 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+    #hero {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        position: relative;
+    }
 
-li {
-    margin: 0;
-    padding: 0;
-}
+    .hero-content,
+    .hero-image {
+        position: static;
+        transform: none;
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
-#hero {
-    height: 85vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    .hero-image {
+        margin-top: 20px;
+        width: 90%;
+    }
 
-.hero-image {
-    position: absolute;
-    top: 50%;
-    right: 7%;
-    transform: translateY(-50%);
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-}
-
-.hero-content {
-    background: #024baade;
-    padding: 20px;
-    border-radius: 10px;
-    color: #EDF2F4;
-    text-align: justify;
-    text-justify: inter-word;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translateY(-50%);
-    max-width: 30%;
-    font-size: 18px;
-}
-
-.hero-content h1 {
-    text-align: center;
-    font-weight: bold;
-}
-
-.button {
-    background-color: #024baade;
-    border: none;
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 4px 2px;
-    cursor: pointer;
-    display:block;
-    margin-top: 280px;
-    margin-right: 55%;
-    border-radius: 10px;
-}
-
-.button:hover {
-    background-color: #00224ede;
+    .hero-button {
+        margin: 20px auto 0;
+    }
 }
