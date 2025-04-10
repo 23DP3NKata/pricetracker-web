@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Price Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="header-nav">
+            <div class="logo">
+                <img src="src/images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
                 <li><a href="#hero">Main</a></li>
                 <li><a href="#about">About App</a></li>
                 <li><a href="#manual">How Install</a></li>
@@ -18,15 +22,25 @@
     </header>
 
     <section id="hero">
-        <div class="hero-wrapper">
-            <div class="hero-left">
-                <div class="hero-content">
-                    <h1>Track Prices, Save More!</h1>
-                    <p>Stay ahead of the game with real-time price tracking on your favorite products. Never miss a deal again!</p>
-                </div>
-                <a href="#" class="hero-button">Read More</a>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="src/images/example_blue_1.png" alt="Hero Image 1">
+                <img src="src/images/example_green_1.png" alt="Hero Image 2">
+                <img src="src/images/example_blue_2.png" alt="Hero Image 3">
+                <img src="src/images/example_green_2.png" alt="Hero Image 4">
             </div>
-            <img src="src/images/hero.png" alt="Hero Image" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Price Tracker</h1>
+                <div class="hero-meta">
+                    <button class="stream-button">Download now!</button>
+                    <span class="genre">Price Drops? You'll Know First</span>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
         </div>
     </section>
     
