@@ -154,6 +154,59 @@ header {
     font-size: 1.5rem;
 }
 
+/* ========== About ========== */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 100px 500px 100px 500px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-left: 20px;
+}
+
+/* ========== Download ========== */
+
+#download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh
+}
+
+.download-content {
+    text-align: center;
+}
+
+.download-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e5e5e5;
+}
+
 /* ========== Footer ========== */
 footer {
     background-color: #f8f8f8;
