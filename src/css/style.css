@@ -164,22 +164,22 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
     margin: 5vh 5vw;
     padding: 2rem;
     flex-wrap: wrap;
     text-align: center;
+    gap: 2rem;
 }
 
 .about-content {
     max-width: 800px;
     width: 100%;
+    flex: 1 1 300px;
 }
 
 .about-content p {
-    font-size: 20px;
+    font-size: 1rem;
 }
-
 
 ul {
     text-align: left;
@@ -206,16 +206,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vw;
     margin: 5vh 5vw;
+    padding: 2rem;
     flex-wrap: wrap;
     text-align: center;
-    
+    gap: 2rem;
 }
 
 .download-content {
     max-width: 800px;
     width: 100%;
+    flex: 1 1 300px;
 }
 
 .download-button {
@@ -228,11 +229,13 @@ li {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 1rem;
+    flex: 0 1 auto;
 }
 
 .download-button:hover {
     background-color: #e5e5e5;
 }
+
 
 /* ========== Footer ========== */
 footer {
@@ -262,11 +265,17 @@ footer p {
     color: #888;
 }
 
+/* ========== Media Queries ========== */
+
 @media (max-width: 768px) {
     #about, #download {
-        height: auto;
         flex-direction: column;
         padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .about-content, .download-content {
+        flex: 1 1 100%;
     }
 
     ul {
