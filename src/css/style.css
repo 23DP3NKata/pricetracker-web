@@ -200,6 +200,26 @@ li {
     margin-left: 20px;
 }
 
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1 1 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-images img {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    border: 0.5px solid #000;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 /* ========== Download ========== */
 
 #download {
