@@ -252,6 +252,11 @@ li {
     transition: background-color 0.3s;
     margin-top: 1rem;
     flex: 0 1 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
 }
 
 .download-button:hover {
